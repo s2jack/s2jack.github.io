@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nagua Tech Website</title>
+  </head>
+  <body>
+    <main>
+      <div id="logo_container" onclick="myFunction()">
+        <div id="logo"></div>
+        <nav id="menu">
+          <a class="menu_item" id="home_btn" href="#home_sec">Home</a>
+          <a class="menu_item" id="product_btn" href="#product_sec">Products</a>
+          <a class="menu_item" id="about_btn" href="#about_sec">About</a>
+          <a class="menu_item" id="contact_btn" href="#contact_sec">Contact</a>
+        </nav>
+      </div>
+    </main>
+    <script>
+      function myFunction() {
+        document.getElementById("logo_container").style.animation = "2s 1 ease-out slideup forwards";
+        document.getElementById("logo").style.transform = "scale(0.6)";
+        document.getElementById("logo").style.height = "100px";
+        document.getElementById("logo").style.transition= "0.5s";
+      }
+    </script>
+  </body>
+</html>
